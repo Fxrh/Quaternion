@@ -589,6 +589,8 @@ QVariant MessageEventModel::data(const QModelIndex& idx, int role) const
                     return "emote";
                 case MessageEventType::Notice:
                     return "notice";
+                case MessageEventType::Audio:
+                    return "audio";
                 case MessageEventType::Image:
                     return "image";
                 default:

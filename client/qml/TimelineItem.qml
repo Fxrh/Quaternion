@@ -384,6 +384,15 @@ Item {
             }
 
             Loader {
+                active: eventType == "audio"
+
+                anchors.top: textField.bottom
+                anchors.left: textField.left
+                anchors.right: textField.right
+
+                sourceComponent: AudioContent { }
+            }
+            Loader {
                 active: eventType == "image"
 
                 anchors.top: textField.bottom

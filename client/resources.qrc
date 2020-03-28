@@ -10,6 +10,7 @@
         <file alias="scrolldown.svg">../icons/scrolldown.svg</file>
         <file alias="busy.gif">../icons/busy_16x16.gif</file>
         <file>qml/Attachment.qml</file>
+        <file>qml/AudioContent.qml</file>
         <file>qml/ImageContent.qml</file>
         <file>qml/FileContent.qml</file>
         <file>qml/TimelineItem.qml</file>
