@@ -1,4 +1,4 @@
-import QtQuick 2.2
+import QtQuick 2.10 // Qt 5.10
 import QtQuick.Controls 1.4
 import QtQuick.Controls.Styles 1.0
 import QtQuick.Layouts 1.1
@@ -236,7 +236,7 @@ Rectangle {
             verticalLayoutDirection: ListView.BottomToTop
             flickableDirection: Flickable.VerticalFlick
             flickDeceleration: 8000
-            boundsBehavior: Flickable.StopAtBounds
+            boundsMovement: Flickable.StopAtBounds
     //        pixelAligned: true
             cacheBuffer: 200
 
@@ -294,11 +294,10 @@ Rectangle {
             }
 
             function scrollUp(dy) {
-                contentY = Math.max(originY, contentY - dy)
+                contentY -= dy
             }
             function scrollDown(dy) {
-                contentY = Math.min(originY + contentHeight - height,
-                                    contentY + dy)
+                contentY += dy
             }
 
             function onWheel(wheel) {

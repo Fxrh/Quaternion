@@ -42,8 +42,8 @@ If you want to build Quaternion from sources, see [BUILDING.md](./BUILDING.md).
 Packagers are still scarce, so please step up and support your favourite system!
 
 ### Requirements
-Quaternion 0.0.9.5 packages on Linux need Qt version 5.9 or higher;
-Debian Buster, Ubuntu Bionic Beaver, Fedora 28 and OpenSUSE 15 are new enough.
+Quaternion 0.0.9.5 packages on Linux need Qt version 5.10 or higher;
+Debian Buster, Ubuntu Disco Dingo and Fedora 28 are new enough.
 For Windows, macOS, AppImage, Flatpak all needed Qt libraries are included
 in the packages. On Windows, you need to separately install OpenSSL
 (see the next section).
