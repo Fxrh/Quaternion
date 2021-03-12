@@ -258,6 +258,12 @@ Rectangle {
             boundsBehavior: Flickable.StopAtBounds
 //            pixelAligned: true // Causes false-negatives in atYEnd
             cacheBuffer: 200
+            highlightFollowsCurrentItem: true
+            highlight: Component {
+                Rectangle {
+                    color: defaultPalette.highlight
+                }
+            }
 
             section.property: "section"
 
@@ -368,6 +374,8 @@ Rectangle {
                     chatView.scrollDown(chatView.height
                                         - sectionBanner.childrenRect.height)
                 onScrollViewTo: chatView.positionViewAtIndex(currentIndex, ListView.Contain)
+                onRefer:
+                    chatView.currentIndex = index
             }
 
             Component.onCompleted: {
